@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DBB3F9B82BAAC3390095497E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBB3F9B72BAAC3390095497E /* GoogleService-Info.plist */; };
+		DBB3F9BC2BAB08850095497E /* MultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB3F9BB2BAB08850095497E /* MultiplayerViewController.swift */; };
+		DBB3F9BE2BAB088C0095497E /* VCLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB3F9BD2BAB088C0095497E /* VCLogin.swift */; };
 		F32E3EA006733BC94B600F6E /* Pods_Chamberly_TicTactoe_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E470183945C3419219083665 /* Pods_Chamberly_TicTactoe_iOS.framework */; };
 		F734B8E01F0595F9001B77F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F734B8D71F0595F9001B77F5 /* AppDelegate.swift */; };
 		F734B8E11F0595F9001B77F5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F734B8D81F0595F9001B77F5 /* GameViewController.swift */; };
@@ -54,6 +56,8 @@
 		DBB3F9B72BAAC3390095497E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "../TicTacToeLatest/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBB3F9B92BAAC6CA0095497E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "../TicTacToeLatest/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBB3F9BA2BAAC6CE0095497E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "../../TicTacToeLatest/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DBB3F9BB2BAB08850095497E /* MultiplayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerViewController.swift; sourceTree = "<group>"; };
+		DBB3F9BD2BAB088C0095497E /* VCLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCLogin.swift; sourceTree = "<group>"; };
 		E470183945C3419219083665 /* Pods_Chamberly_TicTactoe_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chamberly_TicTactoe_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F734B8D71F0595F9001B77F5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "TicTacToe-iOS/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		F734B8D81F0595F9001B77F5 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = "TicTacToe-iOS/GameViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -201,8 +205,10 @@
 		F7D071D11D35B18D0044E7E0 /* Multiplayer */ = {
 			isa = PBXGroup;
 			children = (
+				DBB3F9BB2BAB08850095497E /* MultiplayerViewController.swift */,
 				F773EDD11D36BBAB00643BE0 /* GameCenterController.swift */,
 				F773EDD21D36BBAB00643BE0 /* MulitpeerController.swift */,
+				DBB3F9BD2BAB088C0095497E /* VCLogin.swift */,
 			);
 			name = Multiplayer;
 			sourceTree = "<group>";
@@ -390,6 +396,7 @@
 				F77021EC1D26EBC900CEFFF5 /* TTTMove.swift in Sources */,
 				F77022211D26EC9E00CEFFF5 /* SelectNextPlayerState.swift in Sources */,
 				F77021ED1D26EBC900CEFFF5 /* TTTPlayer.swift in Sources */,
+				DBB3F9BC2BAB08850095497E /* MultiplayerViewController.swift in Sources */,
 				F734B8E71F0595F9001B77F5 /* MenuViewController.swift in Sources */,
 				F773EDF01D36BBFF00643BE0 /* InPlayStateType.swift in Sources */,
 				F773EDD51D36BBAD00643BE0 /* GameCenterController.swift in Sources */,
@@ -398,6 +405,7 @@
 				F773EDFF1D36ECCE00643BE0 /* ScenePresentationDelegate.swift in Sources */,
 				F770222C1D26ECA300CEFFF5 /* GameButton.swift in Sources */,
 				F734B8E41F0595F9001B77F5 /* MatchesViewController.swift in Sources */,
+				DBB3F9BE2BAB088C0095497E /* VCLogin.swift in Sources */,
 				F734B8E51F0595F9001B77F5 /* MenuTableViewCell.swift in Sources */,
 				F77021E61D26EBC500CEFFF5 /* PositionNode.swift in Sources */,
 				F734B8E81F0595F9001B77F5 /* RoundCellView.swift in Sources */,

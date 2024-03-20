@@ -61,14 +61,25 @@ extension GameViewController: ScenePresentationDelegate {
 
 extension GameViewController {
     fileprivate func setupTwoPlayerGame() {
-        let request = GKMatchRequest()
-        request.minPlayers = 2
-        request.maxPlayers = 2
-        
-        let viewController = GKTurnBasedMatchmakerViewController(matchRequest: request)
-        viewController.turnBasedMatchmakerDelegate = self
-        
-        self.present(viewController, animated: true, completion: nil)
+//        let request = GKMatchRequest()
+//        request.minPlayers = 2
+//        request.maxPlayers = 2
+//        
+//        let viewController = GKTurnBasedMatchmakerViewController(matchRequest: request)
+//        viewController.turnBasedMatchmakerDelegate = self
+//        
+//        self.present(viewController, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            // Make sure "LoginViewController" matches the Storyboard ID you assigned earlier.
+            if let loginViewController = storyboard.instantiateViewController(withIdentifier: "VCLoginID") as? VCLogin {
+                // Adjust presentation style and transitions if needed
+                loginViewController.modalPresentationStyle = .fullScreen
+                loginViewController.modalTransitionStyle = .coverVertical
+                
+                // Present the login view controller
+                present(loginViewController, animated: true, completion: nil)
+            }
     }
 }
 
