@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBB3F9B82BAAC3390095497E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBB3F9B72BAAC3390095497E /* GoogleService-Info.plist */; };
+		F32E3EA006733BC94B600F6E /* Pods_Chamberly_TicTactoe_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E470183945C3419219083665 /* Pods_Chamberly_TicTactoe_iOS.framework */; };
 		F734B8E01F0595F9001B77F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F734B8D71F0595F9001B77F5 /* AppDelegate.swift */; };
 		F734B8E11F0595F9001B77F5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F734B8D81F0595F9001B77F5 /* GameViewController.swift */; };
 		F734B8E31F0595F9001B77F5 /* MatchesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F734B8DA1F0595F9001B77F5 /* MatchesDataSource.swift */; };
@@ -47,6 +49,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		757D8FD9DB32CC8841DC9966 /* Pods-Chamberly_TicTactoe-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chamberly_TicTactoe-iOS.release.xcconfig"; path = "Target Support Files/Pods-Chamberly_TicTactoe-iOS/Pods-Chamberly_TicTactoe-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		C58DF9D31394216352BD3785 /* Pods-Chamberly_TicTactoe-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chamberly_TicTactoe-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Chamberly_TicTactoe-iOS/Pods-Chamberly_TicTactoe-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DBB3F9B72BAAC3390095497E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "../TicTacToeLatest/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DBB3F9B92BAAC6CA0095497E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "../TicTacToeLatest/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DBB3F9BA2BAAC6CE0095497E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "../../TicTacToeLatest/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E470183945C3419219083665 /* Pods_Chamberly_TicTactoe_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chamberly_TicTactoe_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F734B8D71F0595F9001B77F5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "TicTacToe-iOS/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		F734B8D81F0595F9001B77F5 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = "TicTacToe-iOS/GameViewController.swift"; sourceTree = SOURCE_ROOT; };
 		F734B8D91F0595F9001B77F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "TicTacToe-iOS/Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -94,12 +102,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7D071DA1D35E1BC0044E7E0 /* GameKit.framework in Frameworks */,
+				F32E3EA006733BC94B600F6E /* Pods_Chamberly_TicTactoe_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B09AA1ED09F0113C8673D75A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C58DF9D31394216352BD3785 /* Pods-Chamberly_TicTactoe-iOS.debug.xcconfig */,
+				757D8FD9DB32CC8841DC9966 /* Pods-Chamberly_TicTactoe-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F773EDD91D36BBB900643BE0 /* Style */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +131,7 @@
 		F786B4DF1D21DF18004706BC /* TicTacToe-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				DBB3F9BA2BAAC6CE0095497E /* GoogleService-Info.plist */,
 				F734B8D71F0595F9001B77F5 /* AppDelegate.swift */,
 				F734B8D81F0595F9001B77F5 /* GameViewController.swift */,
 				F734B8DA1F0595F9001B77F5 /* MatchesDataSource.swift */,
@@ -147,6 +166,7 @@
 			children = (
 				F77022041D26EC6C00CEFFF5 /* GameScene.swift */,
 				F773EDE61D36BBD500643BE0 /* GameScene+Private.swift */,
+				DBB3F9B92BAAC6CA0095497E /* GoogleService-Info.plist */,
 				F77022051D26EC6C00CEFFF5 /* GameScene+Input.swift */,
 				F773EDE81D36BBD500643BE0 /* GameSelectionScene.swift */,
 				F773EDFE1D36ECCE00643BE0 /* ScenePresentationDelegate.swift */,
@@ -191,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				F7D071D91D35E1BC0044E7E0 /* GameKit.framework */,
+				E470183945C3419219083665 /* Pods_Chamberly_TicTactoe_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,10 +231,12 @@
 		F7EE22CE1D21D9BF006C6029 = {
 			isa = PBXGroup;
 			children = (
+				DBB3F9B72BAAC3390095497E /* GoogleService-Info.plist */,
 				F786B4F41D21DF46004706BC /* Shared */,
 				F786B4DF1D21DF18004706BC /* TicTacToe-iOS */,
 				F7EE22D81D21D9BF006C6029 /* Products */,
 				F7D071D61D35E0A10044E7E0 /* Frameworks */,
+				B09AA1ED09F0113C8673D75A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F786B4F11D21DF18004706BC /* Build configuration list for PBXNativeTarget "Chamberly_TicTactoe-iOS" */;
 			buildPhases = (
+				EC8F6D5232041C9FFCBC4E18 /* [CP] Check Pods Manifest.lock */,
 				F786B4DA1D21DF18004706BC /* Sources */,
 				F786B4DB1D21DF18004706BC /* Frameworks */,
 				F786B4DC1D21DF18004706BC /* Resources */,
+				23D09D9541551CFB7A565866 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -294,12 +319,64 @@
 			files = (
 				F734B8E61F0595F9001B77F5 /* MenuTableViewCell.xib in Resources */,
 				F734B8EE1F059600001B77F5 /* Main.storyboard in Resources */,
+				DBB3F9B82BAAC3390095497E /* GoogleService-Info.plist in Resources */,
 				F734B8ED1F059600001B77F5 /* LaunchScreen.storyboard in Resources */,
 				F786B4FB1D21DF5F004706BC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23D09D9541551CFB7A565866 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chamberly_TicTactoe-iOS/Pods-Chamberly_TicTactoe-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chamberly_TicTactoe-iOS/Pods-Chamberly_TicTactoe-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC8F6D5232041C9FFCBC4E18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chamberly_TicTactoe-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F786B4DA1D21DF18004706BC /* Sources */ = {
@@ -365,11 +442,13 @@
 /* Begin XCBuildConfiguration section */
 		F786B4F21D21DF18004706BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C58DF9D31394216352BD3785 /* Pods-Chamberly_TicTactoe-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3LUNZ43L4D;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = "$(SRCROOT)/TicTacToe-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -385,6 +464,7 @@
 		};
 		F786B4F31D21DF18004706BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 757D8FD9DB32CC8841DC9966 /* Pods-Chamberly_TicTactoe-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -439,6 +519,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
